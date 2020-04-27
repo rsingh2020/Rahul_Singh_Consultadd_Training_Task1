@@ -1,0 +1,11 @@
+..................................River and Land Minor Project overview............................................
+
+
+Algorithm:
+
+1) for each element(only if it is river) we will check top and left 
+if there is any adjacent river(horizontal + vertical):
+    we will update the current element by adding the adjacent river i.e current river = current river + adjacent river 
+    and then update adjacent river to 0
+2) in above step after traversing all elements or array, now again traverse the whole array and look for non zero elements
+and append those to list which will be the final answer
