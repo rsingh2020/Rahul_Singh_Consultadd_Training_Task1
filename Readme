@@ -1,11 +1,22 @@
 ..................................River and Land Minor Project overview............................................
 
+read_csv.py :This programm is used for processing the csv file and it returns  the Name and Email of all the entries.
+
+
+authenticate_data.py : This programm is an extention of the above programm which process the data and stores it further in a 
+dictionary."DictReader" module from csv helps us by printing the data in a dictionary format and we use dictionary 
+comprehension and for loop to get the final result.
+
+
+game_functionality.py: This programm takes user input to create a user defined matrix ,it computes the river length using a 
+predefined logic and  further descides if the user was a winner or he lost based on his guess.
+
 
 Algorithm:
 
-1) for each element(only if it is river) we will check top and left 
-if there is any adjacent river(horizontal + vertical):
+1) for each element(only if it is river) we will check top and left elements if it is river or land.
+   If there is any adjacent river(horizontal+ vertical):
     we will update the current element by adding the adjacent river i.e current river = current river + adjacent river 
     and then update adjacent river to 0
-2) in above step after traversing all elements or array, now again traverse the whole array and look for non zero elements
-and append those to list which will be the final answer
+2) In the above step after traversing all elements or array, we will again traverse the whole array and look for non zero elements
+and append those to the list which will be the final guess(river length)
